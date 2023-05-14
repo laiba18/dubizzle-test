@@ -1,41 +1,33 @@
-import React from 'react'
-import styled from 'styled-components'
-import Octicon from 'react-octicon'
+import { useContext } from "react";
+import Octicon from "react-octicon";
+import { SearchContext } from "../context/SearchContext";
+import { InputSearchBox, InputSearchField, SearchContainer } from "./styles";
+import { SearchContextKey } from "../utils/constant";
+
+const { USER_NAME } = SearchContextKey;
 
 const Search = () => {
+  const { state, dispatch } = useContext(SearchContext);
+  const { userName } = state;
+
+  //  this will be executed when type on input field and stores the result in context for passing data into another component
+  const handleSearchInput = ({ target: { value } }) => {
+    dispatch({ type: USER_NAME, payload: value });
+  };
+
   return (
-    <Wrapper>
-      <InputBox>
-      <Octicon name="search" />
-      <Input placeholder="Search Gists for the username"/>
-      </InputBox>
-    </Wrapper>
-  )
-}
+    <SearchContainer>
+      <InputSearchBox>
+        <Octicon name="search" />
+        <InputSearchField
+          placeholder="Search Gists for the username"
+          value={userName}
+          onChange={handleSearchInput}
+        />
+      </InputSearchBox>
+    </SearchContainer>
+  );
+};
 
-const Wrapper = styled.div`
-  padding: 8px;
-  background-color: #ffffff;
-  font-size: 14px;
-  line-height: 1.5;
-  border-radius: 6px;
-  margin: 0 16px;
-`;
 
-const InputBox = styled.div`
-  border-radius: 4px;
-  display: flex;
-  width: 400px;
-`;
-
-const Input = styled.input`
-  border: none;
-  width: 100%;
-  font-size: 16px;
-
-  &:focus{
-    outline: 0;
-  }
-`;
-
-export default Search
+export default Search;

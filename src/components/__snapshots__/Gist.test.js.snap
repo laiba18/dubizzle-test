@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gist test cases should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dicizt ipiXZh"
+  >
+    <div
+      class="sc-iVCKna bjJGBQ"
+    >
+      <div
+        class="sc-dcrmVg jmCkWd"
+      >
+        <img
+          class="sc-gxYJeL hIzBgj"
+        />
+        <a
+          rel="noreferrer"
+          target="_blank"
+        >
+          <p
+            class="sc-kPTPQs kuuQoX"
+          />
+        </a>
+      </div>
+      <div
+        class="sc-dcrmVg jmCkWd"
+      >
+        <div
+          class="sc-ispOId fcUjBH"
+        >
+          <span
+            class="octicon octicon-code"
+          />
+          <a
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div
+              class="sc-kcuKUB iwGKyj"
+            >
+              0
+      File
+            </div>
+          </a>
+        </div>
+        <div
+          class="sc-ispOId fcUjBH"
+        >
+          <span
+            class="octicon octicon-repo-forked"
+          />
+          <a
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div
+              class="sc-kcuKUB iwGKyj"
+            >
+              Forks
+            </div>
+          </a>
+        </div>
+        <div
+          class="sc-ispOId fcUjBH"
+        >
+          <span
+            class="octicon octicon-comment"
+          />
+          <a
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div
+              class="sc-kcuKUB iwGKyj"
+            >
+              Comments
+            </div>
+          </a>
+        </div>
+        <div
+          class="sc-ispOId fcUjBH"
+        >
+          <span
+            class="octicon octicon-star"
+          />
+          <a
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div
+              class="sc-kcuKUB iwGKyj"
+            >
+              Stars
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-kuWgmH la-DjjL"
+    >
+      <p
+        class="sc-duSInm fcsswO"
+      >
+        Created at: Invalid Date
+      </p>
+      <p
+        class="sc-duSInm fcsswO"
+      >
+        Last updated: Invalid Date
+      </p>
+    </div>
+    <div
+      class="sc-jrrXlR kAKLgO"
+    />
+    <div
+      class="sc-crozmw jxZFmi"
+    />
+  </div>
+</DocumentFragment>
+`;
